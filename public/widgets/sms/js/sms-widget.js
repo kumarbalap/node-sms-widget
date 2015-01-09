@@ -125,7 +125,13 @@ $(function() {
                 data: smsData,
                 context: this,
                 success: function (data, status) {
-                    $(this.element).find('.swMsgCont').html(data).show();
+                    if (data.status == 'sent') {
+                        $(this.element).find('.swMsgCont').html('Message sent successfully').show();
+                        //ToDo: populate data to History list
+                    }
+                    if (data.status == 'queued') {
+                        $(this.element).find('.swMsgCont').html('Message is in queue').show();
+                    }
                 },
                 error: function (xhr, desc, err) {
                     console.log(xhr);
@@ -135,6 +141,7 @@ $(function() {
         },
 
         _getSentMessages: function() {
+            // ToDo: Filter by Date and update to existing list
             $.ajax({
                 url: 'http://localhost:8008/get-sent-messages',
                 type: 'get',
