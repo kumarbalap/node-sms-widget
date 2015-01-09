@@ -1,0 +1,193 @@
+.smsWidgetCont{
+ width: 400px;
+ margin-top: 50px;
+}
+
+/* move above to style.css */
+
+.smsButton {
+  display: inline-block;
+  background-color: #e6e6e6;
+  border: 0 none rgba(0, 0, 0, 0);
+  border-radius: 2px;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.8);
+  font-family: inherit;
+  font-size: 100%;
+  padding: 5px 20px 6px;
+  text-decoration: none;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.2) inset;
+}
+.smsButton:hover, .smsButton:focus {
+  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1));
+}
+.smsButton:focus {
+  outline: 0 none;
+}
+
+/* Widget Styles */
+.smsWidget {
+ width: 100%;
+ border: 1px solid #e8e8e8;
+ background-color: #FFF;
+}
+.swHeader {
+  padding: 12px 0;
+  background-color: #fbfbfb;
+  border-bottom: 1px solid #f0f0f0;
+}
+.swHeader h3 {
+  float: left;
+  margin-left: 25px;
+  margin-top: 2px;  
+  font-size: 22px;
+}
+.swHeader .swNav {
+  float: right;
+  margin-right: 25px;
+}
+.smsWidget .swBody {
+  width: 86%;  
+  margin: 7% 7% 6%;
+}
+.smsWidget .swMsgCont {
+  display: none;
+  width: 90%;  
+  padding: 10px 5%;
+  text-align: center;
+  color: green;
+  border: 1px solid #fcefa1;
+  border-radius: 3px;
+  background: #fbf9ee;
+  margin-bottom: 20px;
+}
+.smsWidget .swFailure {
+  color: #e60b09;
+}
+.swInputCont li {
+  margin-top: 20px;
+}
+.swInputCont li:first-child {
+  margin-top: 0;
+}
+.swInputCont li:last-child {
+  text-align: right;
+}
+.smsWidget .swMobile, .smsWidget .swMessage {
+ width: 90%;
+ padding: 13px 5%; 
+ border: 1px solid #dadada;
+ border-radius: 3px;
+ color: #333;
+}
+.smsWidget .swMobile {
+  font-size: 16px;
+}
+.swMobile::-moz-placeholder {
+  font-family: 'Droid Sans', 'Tahoma', 'Verdana';
+  color: #4d4e53;
+  font-size: 14px;
+  font-weight: 300;
+  padding-left: 0;
+}
+.smsWidget .swMessage {
+  font-size: 16px;
+  height: 125px;
+}
+.smsWidget .swSend {
+ background-color: #0078e7;
+ padding: 7px 30px;
+ color: #fff;
+}
+.smsWidget .reqInput {
+  border: 1px solid red;
+}
+
+/* History styles */
+.sentHistCont {
+  display: none;
+  border: 1px solid #F6F5DB;
+  margin-bottom: 10px;
+}
+.sHistHeader {
+  widows: 100%;
+  padding: 8px 0;
+  background-color: #F9F8E6;
+}
+.histHeader {
+ font-size: 16px;
+}
+.logsExpand {
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  line-height: 21px;
+  margin: 0 6px 0 10px;
+  background-color: #b7d472;
+  border: 1px solid #6c8a25;
+  border-radius: 50%;
+  color: #eee;
+  cursor: pointer;
+  font-size: 14px;
+  text-align: center;
+  vertical-align: middle;
+}
+.histClose {
+  display: inline-block;
+  float: right;
+  text-align: right;
+  margin-right: 13px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+  opacity: 0.5;
+  cursor: pointer;
+}
+.histClose:hover {
+  opacity: 0.8;
+}
+.sentHistBody {
+  height: 250px;
+  overflow-y: scroll;
+}
+.sentHistCont li {
+  padding: 10px;
+  border-top: 1px solid #F6F5DB;
+}
+.sentHistCont li:first-child {
+  border: none;
+}
+.sHistInfo {
+  float: left;
+}
+.sHistInfo .sent {
+  background: transparent url(../images/sms-sent.png) no-repeat 0 3px;
+  padding-left: 17px;
+}
+.sHistInfo .received {
+  background: transparent url(../images/sms-received.png) no-repeat 0 2px;
+  padding-left: 17px;
+}
+.sHistDate {
+  float: right;
+  font-size: 13px;
+  text-align: right;
+}
+.sHistMobile {
+  line-height: 25px;
+}
+.sHistDate span {
+  display: block;
+}
+.sHistDate span {
+  color: #999;
+}
+.sHistDate span:first-child {
+  color: #0080EA;
+}
+.sHistMsg {
+  font-size: 13px;
+  margin-top: 7px;
+  line-height: 18px;
+  color: #666;
+}

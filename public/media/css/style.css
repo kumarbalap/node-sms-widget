@@ -1,0 +1,109 @@
+/* RESET Styles */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, cite, code, em, img, small, strike, strong, sub, sup, tt, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+input {
+  border-radius: 0;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+:focus {
+  outline: 0;
+}
+  
+
+/* HTML5 Element Reset */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, main {
+  display: block;
+}
+
+/* Commmon */
+@font-face {
+    font-family: "Droid Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Droid Sans"), local("DroidSans"), url("https://fonts.gstatic.com/s/droidsans/v6/fwaKx1kMZPd4oO9WTEGQafesZW2xOQ-xsNqO47m55DA.woff") format("woff");
+}
+.wrapper {
+  width: 600px;
+  margin: 0 auto;
+}
+.clearfix:before, .clearfix:after {
+ clear: both;
+ content: "";
+ display: table;
+}
+
+/* Buttons */
+.butMedium {
+  display: inline-block;
+  background-color: #e6e6e6;
+  border: 0 none rgba(0, 0, 0, 0);
+  border-radius: 2px;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.8);
+  font-family: inherit;
+  font-size: 100%;
+  padding: 5px 20px 6px;
+  text-decoration: none;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.2) inset;
+}
+.butMedium:hover, .butMedium:focus {
+  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1));
+}
+.butMedium:focus {
+  outline: 0 none;
+}
+
+
+html { 
+  font-size: 62.5%;
+}
+body {
+  font-family: 'Droid Sans', 'Tahoma', 'Verdana';
+  font-size: 15px;
+  background-color: #f0f0f0;
+}
+
+/* header styles */
+header {
+  padding: 30px 0;
+  border-bottom: 3px solid #e3791c;
+  background-color: #FFF;
+}
+header h1 {
+ float: left;
+ font-size: 27px;
+}
+header nav {
+  float: right;
+}
+
+/* body styles */
+.mainCont {
+ position: relative;
+ height: auto;
+ min-height: 500px;
+}
