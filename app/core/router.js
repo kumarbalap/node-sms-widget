@@ -25,6 +25,11 @@ server.post("/send-message", controllers.smsWidget.sendMessage);
 //server.get("/get-message/:id", controllers.smsWidget.getMessage);
 server.get("/get-sent-messages", controllers.smsWidget.getSentMessages);
 
+server.get(/^\/?.*/, restify.serveStatic({
+    directory: './public/',
+    default: 'index.html'
+}));
+
 /* Server start */
 var serverPort = 8888; // default
 if (config.server && config.server.port) {
