@@ -1,9 +1,8 @@
 {
     "name": "sms-app",
-    "version": "1.0.0",
     "description": "SMS application",
     "author": "Balakumar",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "dependencies": {
         "config": "0.4.x",
         "restify": "latest",
