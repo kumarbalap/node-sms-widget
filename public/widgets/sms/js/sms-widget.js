@@ -197,7 +197,7 @@ $(function() {
     });
 
     $(".smsWidgetCont").smswidget({
-        'from': '+1 219-285-3160'
+        'from': ''
     });
 
 });
